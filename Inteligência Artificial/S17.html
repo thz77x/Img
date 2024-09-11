@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo-artigo">
+      <h1>Treinamento, Ajustes, Avaliação e métricas em IA avaliativa.</h1>
+      <p>Compreender as técnicas de treinamento em IA Generativa e as métricas utilizadas na avaliação dos modelos.</p>
+      
+      <h2>1. Binary Cross-Entropy Loss. </h2>
+      <p>O Binary Cross-Entropy Loss desempenha um papel fundamental na otimização de modelos de aprendizado de máquina. Através da minimização dessa função de perda, é possível ajustar os parâmetros do modelo de forma a melhorar sua capacidade de fazer previsões precisas.
+
+        A minimização do Binary Cross-Entropy Loss é geralmente realizada usando algoritmos de otimização, como o gradiente descendente. Esses algoritmos ajustam os parâmetros do modelo iterativamente, atualizando-os na direção que reduz a perda. Ao repetir esse processo várias vezes, o modelo é capaz de aprender a melhor combinação de parâmetros que minimiza a perda e, consequentemente, melhora sua capacidade de fazer previsões corretas.</p>
+    
+    <h2>2. Parâmetros e hiperparâmetros.</h2>
+      <p>Os hiperparâmetros são parâmetros ajustáveis que permitem controlar o processo de treinamento do modelo. Por exemplo, com redes neurais, você decide o número de camadas ocultas e o número de nós em cada camada. O desempenho do modelo depende muito dos hiperparâmetros.
+
+        O ajuste de hiperparâmetro, também chamado de otimização de hiperparâmetro, é o processo de localizar a configuração de hiperparâmetros que resulta no melhor desempenho. O processo normalmente é manual e caro em termos computacionais.
+        
+        O Azure Machine Learning permite automatizar o ajuste de hiperparâmetro e executar experimentos em paralelo para otimizar os hiperparâmetros com eficiência.</p>
+
+      <h2>3. Busca em Grade (Grid Search).</h2>
+      <p> O Grid Search, ou busca em grade, é um algoritmo de busca que recebe uma conjunto de valores de um ou mais hiperparâmetros e testa todas as combinações dentro dessa vizinhança. O algoritmo tabela qual foi o desempenho de cada configuração e ao final de todos os testes, fala qual é a melhor escolha. Atualmente, existem alternativas muito melhores que o Grid Search, mas vale a pena citá-lo por sua simplicidade.</p>
+
+      <h2>4. Avaliação e Métricas de Avaliação para IA Generativa</h2>
+      <p>A avaliação de IA generativa envolve abordagens variadas:
+
+        1. Avaliação Humana: Avaliadores humanos julgam a qualidade com base em critérios como criatividade, coerência e originalidade.
+        2. Métricas Automatizadas: Incluem BLEU, ROUGE, METEOR para texto, FID para imagens, e perplexidade para modelos de linguagem.
+        3. Métricas Específicas de Domínio: Como a Distância de Wasserstein para GANs e métricas de diversidade de conteúdo.
+        4. Métricas Baseadas em Simuladores: Avaliam o impacto das saídas geradas em ambientes simulados.
+        5. Métricas Adversárias: Avaliam a eficácia de geradores em modelos adversariais.
+        
+        Os principais desafios incluem a subjetividade da avaliação humana e a falta de referências claras em tarefas criativas.</p>
+    
+    </div>
+    <a href="../index.html">Voltar à página inicial.</a>   
+</body>
+</html>
